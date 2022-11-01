@@ -4,26 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Proposal | YOUR TITLE HERE</title>
-  <meta name="description" content="Chapter 2 Proposal | YOUR TITLE HERE" />
+  <title>Chapter 2 Proposal | Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022</title>
+  <meta name="description" content="Chapter 2 Proposal | Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Proposal | YOUR TITLE HERE" />
+  <meta property="og:title" content="Chapter 2 Proposal | Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Proposal | YOUR TITLE HERE" />
+  <meta name="twitter:title" content="Chapter 2 Proposal | Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022" />
   
   
   
 
-<meta name="author" content="YOUR NAMES HERE" />
+<meta name="author" content="Jingtian Wang Tongli Su Michelle Sun" />
 
 
-<meta name="date" content="2022-10-22" />
+<meta name="date" content="2022-11-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,7 +69,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">SHORT TITLE HERE</a></li>
+<li><a href="./">Covid</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
@@ -98,7 +98,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">YOUR TITLE HERE</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022</a>
           </h1>
         </div>
 
@@ -110,9 +110,26 @@
 <h1><span class="header-section-number">Chapter 2</span> Proposal<a href="proposal.html#proposal" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="research-topic" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Research topic<a href="proposal.html#research-topic" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>So far, according to the Centers for Disease Control and Prevention(CDC), the Covid-19 pandemic has already caused a total death of 1066351 in the United States. As its virus strains mutate, various types of Covid-19 such as Alpha, Beta and Delta keep emerging, causing different damage to patients with various health conditions, in each age group, in each area and in each time period. Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Therefore, to figure out the damage pattern of this virus among the public, it is necessary for us to show health conditions and contributing causes mentioned in conjunction with death involving COVID-19 by age group and jurisdiction of occurrence. Specifically, we plan to arrange COVID-19 death cases in groups according to people’s condition groups (respiratory disease, etc), detailed conditions (chronic lower respiratory diseases, adult respiratory distress syndrome, etc) and ages, and visualize their trends in the past 3 years in 50 states and the United States as a whole.</p>
 </div>
 <div id="data-availability" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Data availability<a href="proposal.html#data-availability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>· What data sources did you consider? How did you decide which one(s) to analyze?</p>
+<p>Since our research orientation is Covid-19 health related analysis in the United States, the first data source we consider is the dataset from the CDC. We decided to use the Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022 dataset from CDC because the dataset contains interesting information to analyze, such as date, age group, condition and death which could potentially answer the questions we come up with about our research topic. Moreover, the information of the dataset is fresh and up to date, last updated on 10/26/2022 and updates weekly.</p>
+<p>· Which institutions or individuals maintain the data source(s)?</p>
+<p>CDC, a reliable U.S. government institution maintains the data source, which makes the data trustworthy to use for our project.</p>
+<p>· How was the data collected?</p>
+<p>The provisional counts for COVID-19 deaths come from the information documented in the National Vital Statistics System (NVSS). The reported mortality information from death certificates was first submitted to the National Center for Health Statistics(NCHS) and then it was processed, coded, and stored in the NVSS. This process takes up to several weeks, so the dataset that we use has an information lag of about 1-2 weeks. Moreover, the data records for previous dates are also continuously updated depending on the new death certificate data received by NCHS for accuracy. However, we hold the opinion that there could be some deaths that are not recorded and reported by U.S. citizens.</p>
+<p>· In what format is the data available?</p>
+<p>The data is available in CSV format.</p>
+<p>· What steps do you need to take to import the data?</p>
+<p>The dataset can be downloaded directly from the CDC website in CSV format. The data will first be imported to Python for pre-processing, and we plan to import the CSV file as a pandas data frame through the pandas package in Python. After pre-processing in Python, the data will be exported to CSV file and imported to R by standard read_csv command.</p>
+<p>· If you have questions about the data, whom can you contact?</p>
+<p>We can reach out to the data center of CDC by email. <a href="mailto:cdcinfo@cdc.gov" class="email">cdcinfo@cdc.gov</a></p>
+<p>· Are there any known issues relating to data quality?</p>
+<p>After initial inspection we’ve noticed some columns with missing values. Since the dataset has over 470,000 rows, we will consider dropping the columns with missing values and that won’t affect overall data quality.</p>
+<p>· Citation</p>
+<p>National Center for Health Statistics. Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022. Date accessed 10/31/2022. Available from <a href="https://data.cdc.gov/d/hk9y-quqm" class="uri">https://data.cdc.gov/d/hk9y-quqm</a>.</p>
 
 </div>
 </div>
@@ -153,7 +170,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/main/proposal.Rmd",
+"link": "https://github.com/Chester-JingtianWang/Covid_deaths_by_conditions/edit/main/proposal.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -161,7 +178,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/main/proposal.Rmd",
+"link": "https://github.com/Chester-JingtianWang/Covid_deaths_by_conditions/blob/main/proposal.Rmd",
 "text": null
 },
 "download": null,

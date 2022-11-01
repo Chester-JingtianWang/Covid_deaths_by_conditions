@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAMES HERE"
+title: "Conditions Contributing to COVID-19 Deaths, by State and Age, Provisional 2020-2022"
+author: "Jingtian Wang    Tongli Su   Michelle Sun"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
